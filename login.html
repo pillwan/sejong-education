@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>로그인 | 원성수 교육감 후보</title>
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Pretendard Font -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+
+  <!-- Main Styles -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+  <!-- Navigation Placeholder -->
+  <div id="navbar-placeholder"></div>
+
+  <!-- Auth Container -->
+  <div class="auth-container">
+    <div class="auth-card">
+      <!-- Header -->
+      <div class="auth-header">
+        <i class="fas fa-sign-in-alt"></i>
+        <h1>로그인</h1>
+      </div>
+
+      <!-- Form -->
+      <form id="login-form">
+        <!-- Message Alert -->
+        <div id="form-message" class="form-message"></div>
+
+        <!-- Email Field -->
+        <div class="form-group">
+          <label for="email">이메일</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="example@email.com"
+            required
+          >
+        </div>
+
+        <!-- Password Field -->
+        <div class="form-group">
+          <label for="password">비밀번호</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="비밀번호를 입력해주세요"
+            required
+          >
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="btn-submit">
+          <i class="fas fa-sign-in-alt"></i>
+          로그인
+        </button>
+      </form>
+
+      <!-- Footer Link -->
+      <div class="auth-footer">
+        아직 회원이 아니신가요?
+        <a href="signup.html">회원가입</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Placeholder -->
+  <div id="footer-placeholder"></div>
+
+  <!-- Supabase SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+  <!-- App Scripts -->
+  <script src="js/supabase-config.js"></script>
+  <script src="js/header.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>

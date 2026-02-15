@@ -11,27 +11,8 @@
 </head>
 <body>
 
-  <!-- ===== Navigation ===== -->
-  <nav class="navbar">
-    <div class="container nav-inner">
-      <a href="#" class="nav-logo">
-        <img src="https://img.asiatoday.co.kr/file/2022y/08m/08d/20220808010004791_1659945540_1.jpg" alt="원성수" class="logo-photo">
-        <span>원성수</span>
-      </a>
-      <div class="nav-menu">
-        <a href="#about">소개</a>
-        <a href="#policies">공약</a>
-        <a href="#achievements">성과</a>
-        <a href="#news">활동</a>
-        <a href="#support">후원·참여</a>
-      </div>
-      <button class="hamburger" aria-label="메뉴 열기">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </div>
-  </nav>
+  <!-- ===== Navigation (동적 주입) ===== -->
+  <div id="navbar-placeholder"></div>
 
   <!-- ===== Hero Section ===== -->
   <section class="hero" id="hero">
@@ -324,45 +305,12 @@
     </div>
   </section>
 
-  <!-- ===== Footer ===== -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-info">
-          <div class="logo-text">원성수 선거사무소</div>
-          <p>
-            <i class="fas fa-map-marker-alt" style="margin-right:6px"></i>세종특별자치시 ○○로 ○○길 00<br>
-            <i class="fas fa-phone" style="margin-right:6px"></i>044-000-0000<br>
-            <i class="fas fa-envelope" style="margin-right:6px"></i>contact@example.com
-          </p>
-        </div>
-        <div class="footer-links">
-          <h4>바로가기</h4>
-          <a href="#about">후보자 소개</a>
-          <a href="#policies">핵심 공약</a>
-          <a href="#achievements">주요 성과</a>
-          <a href="#news">활동 소식</a>
-          <a href="#support">후원·참여</a>
-        </div>
-        <div>
-          <h4>SNS</h4>
-          <div class="footer-social">
-            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-            <a href="#" aria-label="Blog"><i class="fas fa-blog"></i></a>
-          </div>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2026 원성수 선거사무소. All rights reserved.</p>
-        <p class="legal">
-          본 사이트는 공직선거법을 준수하여 운영됩니다. | 선거운동 기간 중 관련 법령에 따라 운영됩니다.
-        </p>
-      </div>
-    </div>
-  </footer>
+  <!-- ===== Footer (동적 주입) ===== -->
+  <div id="footer-placeholder"></div>
 
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="js/supabase-config.js"></script>
+  <script src="js/header.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
