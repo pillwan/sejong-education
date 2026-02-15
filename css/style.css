@@ -188,37 +188,29 @@ section {
 .nav-auth {
   display: flex;
   align-items: center;
-  gap: 10px;
-  margin-left: 16px;
+  gap: 14px;
+  margin-left: 20px;
 }
 
-.btn-nav-login {
-  padding: 7px 18px;
-  border: 2px solid var(--primary);
-  border-radius: 50px;
-  font-weight: 600;
-  font-size: 0.85rem;
-  color: var(--primary);
-  transition: var(--transition);
-}
-
-.btn-nav-login:hover {
-  background: var(--primary);
-  color: #fff;
-}
-
+.btn-nav-login,
 .btn-nav-signup {
-  padding: 7px 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 20px;
   background: var(--primary);
   color: #fff;
   border-radius: 50px;
   font-weight: 600;
-  font-size: 0.85rem;
+  font-size: 0.82rem;
   transition: var(--transition);
+  white-space: nowrap;
 }
 
+.btn-nav-login:hover,
 .btn-nav-signup:hover {
   background: var(--primary-dark);
+  transform: translateY(-1px);
 }
 
 .nav-user-name {
